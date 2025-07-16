@@ -201,8 +201,8 @@ main section {
 }
 
 footer input[type="text"],
-  footer input[type="email"],
-  footer textarea {
+footer input[type="email"],
+footer textarea {
   display: block;
   margin-bottom: 24px;
   padding: 18px 35px;
@@ -216,20 +216,36 @@ footer input[type="text"],
 
 
 /* responsive media query */
-.hide {
-  display: none;
-}
-
 @media screen and (max-width: 576px) {
 
   .skills-container,
   .resume-container,
-  .footer, 
-  .about-items {
+  .footer,
+  .about-items,
+  nav,
+  nav > ul > li > a,
+  .banner {
     flex-direction: column;
   }
 
-  .footer, .about {
+  nav > ul{
+    gap: 20px;
+  }
+
+  .banner {
+    margin: 20px;
+  }
+
+  .banner-profile-pic {
+    width: 100%;
+  }
+
+  .header {
+    background-image: none;
+  }
+
+  .footer,
+  .about {
     padding: 20px;
   }
 
